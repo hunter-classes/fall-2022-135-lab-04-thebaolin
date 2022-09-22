@@ -41,12 +41,10 @@ cout << "trapezoid(12,5):\n";
 cout << result6;
 cout << "\n------------------\n";
 
-/*
+
 string result7 = "";
 result7 = checkerboard3x3(16,11);
 cout << "checkerboard3x3(16,11):\n";
 cout << result7;
 cout << "\n------------------\n";
-}
-*/
 }

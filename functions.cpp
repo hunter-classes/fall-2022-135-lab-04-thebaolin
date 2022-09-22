@@ -86,7 +86,7 @@ string upper(int length){
 string trapezoid(int width, int length){
     string result = "";
   //checks if the shape is impossible
-  if( length > 0.5 * width){
+  if( (length > 0.5 * width) || length <=0){
     cout<<"Impossible Shape\n";
   }
   else{
@@ -106,4 +106,54 @@ string trapezoid(int width, int length){
   result+="\n";
     }
     return result;
-}
+}   
+
+string checkerboard3x3(int width, int height){
+    string result = "";
+    bool printstar = true;
+    int counter = 0, changecounter = 0; 
+    string stars = "*";
+    string spaces = " ";
+
+    for(int x = 0; x < height; x++){
+        for(int y = 0; y < width; y++){
+            if(printstar)
+                result+=stars;
+            else
+                result+=spaces;
+            
+            counter++; //counts to check if 3 stars or spaces have been printed
+
+            if(counter == 3){
+                counter = 0; //reset
+                if(printstar)
+                    printstar = false; //switch to spaces
+                else
+                    printstar = true;
+            }
+        }
+        result +="\n"; //end of the row
+        counter = 0; 
+
+        if(printstar)
+            printstar = false; //switch to spaces
+        else
+            printstar = true; //switch to stars
+
+        if(x % 3 == 2)
+            changecounter++;
+
+        if(changecounter % 2 !=0){ //switch symbols
+            stars = " ";
+            spaces = "*";
+        }
+        
+        else{
+            stars = "*";
+            spaces = " ";
+            }
+        
+        }
+        return result;
+    }
+
