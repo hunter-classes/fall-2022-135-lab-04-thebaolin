@@ -1,50 +1,49 @@
 #include <iostream>
 #include "functions.h"
-using namespace std;
 
 int main(){
 
-cout << "\n------------------\n";
-string result1 = "";
+std::cout<< "\n------------------\n";
+std::string result1 = "";
 result1 = box(3,5);
-cout << "box(3,5):\n";
-cout << result1;
-cout << "\n------------------\n";
+std::cout<< "box(3,5):\n";
+std::cout<< result1;
+std::cout<< "\n------------------\n";
 
-string result2 = "";
+std::string result2 = "";
 result2 = checkerboard(11,6);
-cout << "checkerboard(11,6):\n";
-cout << result2;
-cout << "\n------------------\n";
+std::cout<< "checkerboard(11,6):\n";
+std::cout<< result2;
+std::cout<< "\n------------------\n";
 
-string result3 = "";
+std::string result3 = "";
 result3 = cross(8);
-cout << "cross(8):\n";
-cout << result3;
-cout << "\n------------------\n";
+std::cout<< "cross(8):\n";
+std::cout<< result3;
+std::cout<< "\n------------------\n";
 
-string result4 = "";
+std::string result4 = "";
 result4 = lower(8);
-cout << "lower(8):\n";
-cout << result4;
-cout << "\n------------------\n";
+std::cout<< "lower(8):\n";
+std::cout<< result4;
+std::cout<< "\n------------------\n";
 
-string result5 = "";
+std::string result5 = "";
 result5 = upper(5);
-cout << "upper(5):\n";
-cout << result5;
-cout << "\n------------------\n";
+std::cout<< "upper(5):\n";
+std::cout<< result5;
+std::cout<< "\n------------------\n";
 
-string result6 = "";
+std::string result6 = "";
 result6 = trapezoid(12,5);
-cout << "trapezoid(12,5):\n";
-cout << result6;
-cout << "\n------------------\n";
+std::cout<< "trapezoid(12,5):\n";
+std::cout<< result6;
+std::cout<< "\n------------------\n";
 
 
-string result7 = "";
+std::string result7 = "";
 result7 = checkerboard3x3(16,11);
-cout << "checkerboard3x3(16,11):\n";
-cout << result7;
-cout << "\n------------------\n";
+std::cout<< "checkerboard3x3(16,11):\n";
+std::cout<< result7;
+std::cout<< "\n------------------\n";
 }
