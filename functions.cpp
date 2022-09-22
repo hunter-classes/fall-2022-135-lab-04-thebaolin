@@ -86,8 +86,10 @@ string upper(int length){
 string trapezoid(int width, int length){
     string result = "";
   //checks if the shape is impossible
-  if( (length > 0.5 * width) || length <=0){
-    cout<<"Impossible Shape\n";
+if ((width % 2 == 0) && (length) > (width/2)){ 
+    return "Impossible Shape";
+  } else if ((width % 2 != 0) && (length > (width/2) + 1)){ 
+    return "Impossible Shape!";
   }
   else{
   
